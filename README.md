@@ -12,8 +12,8 @@ It is structured as follows:
 ## Benchmarks
 
 Before running the program, please make sure to configure Defects4J and GitBug-Java properly.<br>
-Defects4J: [https://github.com/rjust/defects4j](https://github.com/rjust/defects4j)<br>
-GitBug-Java: [https://github.com/gitbugactions/gitbug-java](https://github.com/gitbugactions/gitbug-java)
+- Defects4J: [https://github.com/rjust/defects4j](https://github.com/rjust/defects4j)<br>
+- GitBug-Java: [https://github.com/gitbugactions/gitbug-java](https://github.com/gitbugactions/gitbug-java)
 
 ## Retrieval Corpus
 
