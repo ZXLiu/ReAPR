@@ -10,6 +10,13 @@ It is structured as follows:
 - [reapir.py](repair.py) contains the entire repair process and serves as the main program entry point.
 - [requirements.txt](requirements.txt) contains the dependencies that need to be installed for the project to run.
 
+## Guide
+### 1.Install Dependencies
+To run this code, you first need to install the project dependencies and two benchmarks: [Defects4J](https://github.com/rjust/defects4j) and [GitBug-Java](https://github.com/gitbugactions/gitbug-java).
+To install the dependencies, run the following command:
+···shell
+pip install -r requirements.txt
+
 ## Benchmarks
 
 Before running the program, please make sure to configure Defects4J and GitBug-Java properly.<br>
