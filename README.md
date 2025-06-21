@@ -23,6 +23,25 @@ After downloading the retrieval repository to a suitable local directory, run th
 cd BM25
 python3 search_bm25.py --search_corpus your retrieval path --query_str the string to be retrieved --same_name results save location --temp_path temp path
 ```
+### 3.DPR Algorithm Implementation
+First, run the following command to train a dense retriever.
+```bash
+cd DPR
+accelerate launch Train_dpr_retriever.py
+```
+Then, use the trained dense retriever to embed the fix content of each bug in the corpus into vectors, forming a vector retrieval database.
+```bash
+accelerate launch fix2embedding.py --fix_path retrieval corpus path --pretrained_model_path your dense retriever --output_dir embedding corpus path
+```
+Finally, run the following command to execute the DPR algorithm.
+```bash
+python3 search_dpr.py --fix_path retrieval corpus path --bug_str the string to be retrieved --top_k top_k --embedding_dir embedding corpus path --pretrained_model_path your dense retriever
+```
+### 4.ReAPR Workflow Implementation
+Running the following command will execute the complete ReAPR workflow.
+```bash
+python3 repair.py --model_name generative model name --batch_size batch_size --dataset defects4j or githubjava --retrieval_way bm25 or dpr or no retrieval --chances beam search count
+```
 ## Benchmarks
 
 Before running the program, please make sure to configure Defects4J and GitBug-Java properly.<br>
