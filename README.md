@@ -8,6 +8,7 @@ It is structured as follows:
 - [Defects4j](Defects4j) contains the single-function bugs we extracted from Defects4J 2.0.
 - [Gitbug-java](Gitbug-java) contains the single-function bugs we extracted from GitBug-Java.
 - [reapir.py](repair.py) contains the entire repair process and serves as the main program entry point.
+- [requirements.txt](requirements.txt) contains the dependencies that need to be installed for the project to run.
 
 ## Benchmarks
 
