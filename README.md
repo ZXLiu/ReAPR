@@ -12,11 +12,17 @@ It is structured as follows:
 
 ## Guide
 ### 1.Install Dependencies
-To run this code, you first need to install the project dependencies and two benchmarks: [Defects4J](https://github.com/rjust/defects4j) and [GitBug-Java](https://github.com/gitbugactions/gitbug-java).
+To run this code, you first need to install the project dependencies and two benchmarks: [Defects4J](https://github.com/rjust/defects4j) and [GitBug-Java](https://github.com/gitbugactions/gitbug-java).<br>
 To install the dependencies, run the following command:
-···shell
+```bash
 pip install -r requirements.txt
-
+```
+### 2.BM25 Algorithm Implementation
+After downloading the retrieval repository to a suitable local directory, run the following command to execute the BM25 algorithm.
+```bash
+cd BM25
+python3 search_bm25.py --search_corpus your retrieval path --query_str the string to be retrieved --same_name results save location --temp_path temp path
+```
 ## Benchmarks
 
 Before running the program, please make sure to configure Defects4J and GitBug-Java properly.<br>
